@@ -10,39 +10,49 @@
 
     <img src="assets/pexels-betul-29311829.jpg" alt="a coffee cup in the middle of cocoa beans">
 
+
+<div class="main-body">
+
    <div class="header">
-    <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. </H3>
-    <h3>Sign up <em>now</em> to get started.</h3>
+    <h3> This is not a real online service! You know you need something 
+      <br>like this in your life to help you realize your deepest dreams.</br>
+        Sign up <em>now</em> to get started.</h3>
     <h3>You <em> know </em>you want to.</h3>
    </div>
 
-   <form action="" method="post">
-     <h3 id="Form heading">Let's do this!</h3>
-      <p>
+
+  <div class="form-container">
+   <h3 id="Form-heading">Let's do this!</h3>
+   
+   <form action="" method="post" class="form-container">
+    <div class="form-columns">
+      <p class="form-column">
        <label for="first-name">FIRST NAME</label>
        <input type="text" name="user_name" id="first-name"> 
-       <label for="last-name">LAST NAME</label>
-       <input type="text" name="user_surname" id="last-name"> 
+       <label for="email">EMAIL</label>
+       <input type="text" name="mail-id" id="email">
+       <label for="password">PASSWORD</label>
+       <input type="text" id="password">
       </p>
       
-      <p>
-        <label for="email">EMAIL</label>
-        <input type="text" name="mail-id" id="email">
+      <p class="form-column">
+        <label for="last-name">LAST NAME</label>
+        <input type="text" name="user_surname" id="last-name">
         <label for="phone">PHONE NUMBER</label>
         <input type="text" id="phone">
-      </p>
-
-      <p>
-        <label for="password">PASSWORD</label>
-        <input type="text" id="password">
         <label for="confirm-password">CONFIRM PASSWORD</label>
         <input type="text" id="confirm-password">
       </p>
+    </div>
+   </div>
    </form>
 
-   <button>Create Account</button>
+   <div class="footer">
+    <button type="submit">Create Account</button>
+    <p>Already have an account? <a href="">Log in</a></p>
+   </div>
 
-   <div class="footer">Already have an account? <a href="">Log in</a> </div>
+</div> 
 
 
 </body>
