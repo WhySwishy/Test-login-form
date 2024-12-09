@@ -28,32 +28,32 @@
     <div class="form-columns">
       <p class="form-column">
        <label for="first-name">FIRST NAME</label>
-       <input type="text" name="user_name" id="first-name"> 
+       <input type="text" name="user_name" id="first-name" minlength="3" maxlength="20" required> 
        <label for="email">EMAIL</label>
-       <input type="text" name="mail-id" id="email">
+       <input type="email" name="mail-id" id="email" required>
        <label for="password">PASSWORD</label>
-       <input type="text" id="password">
+       <input type="text" id="password" minlength="6" maxlength="20" placeholder="Must be atleast 6 characters" required> 
       </p>
       
       <p class="form-column">
         <label for="last-name">LAST NAME</label>
-        <input type="text" name="user_surname" id="last-name">
+        <input type="text" name="user_surname" id="last-name" minlength="3" maxlength="20" required>
         <label for="phone">PHONE NUMBER</label>
-        <input type="text" id="phone">
+        <input type="text" id="phone" pattern="[6-9]{1}[0-9]{9}" required>
         <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input type="text" id="confirm-password">
+        <input type="text" id="confirm-password" minlength="6" maxlength="20" required>
       </p>
     </div>
    </div>
    </form>
 
    <div class="footer">
-    <button type="submit">Create Account</button>
+    <button type="submit" id="submit">Create Account</button>
     <p>Already have an account? <a href="">Log in</a></p>
    </div>
 
 </div> 
 
-
+<script src="script.js"> </script>
 </body>
 </html>
